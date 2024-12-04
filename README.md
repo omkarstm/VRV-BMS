@@ -106,5 +106,4 @@ The system includes **four predefined roles** with distinct permissions:
 ### **Installation**
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/vrvsecurity.git
-   cd vrvsecurity
+   git clone https://github.com/omkarstm/VRV-BMS
