@@ -1,0 +1,95 @@
+.login {
+  background-image: url('../../assets/Auth-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+background-position: center;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+max-width: 1024px;
+    .form-container {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      background-color: white;
+      padding: 4rem 1rem;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border-radius: 8px;
+      @media (min-width:576px) {
+        width: 70%;
+      }
+      @media (min-width:1024px) {
+        width: 60%;
+      }
+      h1 {
+        font-size: 44px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 18px;
+        margin: 0;
+      }
+
+      .login-form {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        @media (min-width:576px) {
+          width: 70%;
+        }
+        @media (min-width:1024px) {
+          width: 60%;
+        }
+      }
+
+      .submit-button {
+        width: 100%;
+        padding: 12px;
+        background-color: #191922;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        &:hover {
+          background-color: #191922;
+        }
+      }
+      .social-login-container{
+        margin: 1rem 0;
+        .social-login{
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          gap: 2rem;
+          margin-top: 0.5rem;
+          div{
+            border: 1px solid #191922; 
+            padding: 0.4rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            &:hover {
+              background-color: #191922;
+              transition: all 0.3s;
+              color: white;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

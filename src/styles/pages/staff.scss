@@ -1,0 +1,78 @@
+.staff-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    section {
+      margin-bottom: 30px;
+  
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+  
+      h3 {
+        font-size: 1.2rem;
+        margin-top: 20px;
+      }
+      .attendance-actions{
+        display: flex;
+        gap: 1rem;
+        .attendance-action-btn{
+            height: 40px;
+            padding: 0 0.7rem;
+            width: fit-content;
+            cursor: pointer;
+            color: #191922;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(217, 217, 217, 0.4);
+            border-radius: 5px;
+            &:hover{
+                background-color: rgba(217, 217, 217, 0.5);
+
+            }
+        }
+      }
+    }
+  
+    .attendance-form,
+    .leave-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+  
+      input,
+      textarea {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+   
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        border-radius: 5px;
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  

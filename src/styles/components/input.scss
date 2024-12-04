@@ -1,0 +1,28 @@
+.form-group {
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: left;
+  input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #191922;
+    background: transparent;
+    color: #191922;
+    font-size: 16px;
+    outline: none;
+
+    &:focus + label,
+    &:not(:placeholder-shown) + label {
+      top: -15px;
+    }
+  }
+  label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+}

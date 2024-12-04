@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# **Building Management System (BMS)**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Overview**
+The **Building Management System (BMS)** is a comprehensive web application designed to streamline the management of roles, users, families, and staff in a residential or commercial building. The system incorporates **role-based access control (RBAC)** to provide customized access to specific features and pages based on user roles. 
 
-## Available Scripts
+This project ensures secure and efficient administration while catering to the unique requirements of building staff, families, and managers.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## **Features**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **Roles and Permissions**
+The system includes **four predefined roles** with distinct permissions:
+1. **Admin**:
+   - **Access**: All pages except **Family Profile** and **Staff Profile**.
+   - Responsibilities: Manage users, roles, families, and staff.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Moderator**:
+   - **Access**: **Manage Users**, **Manage Family**, and **Manage Staff** pages.
+   - Responsibilities: Assist with family and staff management.
 
-### `npm test`
+3. **Family**:
+   - **Access**: **Family Profile** page only.
+   - Responsibilities: Manage and view their household information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Staff**:
+   - **Access**: **Staff Page** only.
+   - Responsibilities: Manage and view staff-related tasks.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Page Functionality**
+1. **Dashboard**:
+   - Overview of building-wide updates and statistics.
+   - Displays personalized insights based on user roles.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Manage Users**:
+   - Add, edit, or delete user accounts.
+   - Accessible by Admin and Moderator roles.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Manage Roles**:
+   - Admin can create, edit, and delete roles.
+   - Assign and manage dynamic permissions for roles.
 
-### `npm run eject`
+4. **Manage Family**:
+   - Add, edit, and manage family profiles.
+   - Accessible by Admin and Moderator roles.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Manage Staff**:
+   - Add, edit, and manage staff profiles.
+   - Accessible by Admin and Moderator roles.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. **Family Profile**:
+   - Family-specific page for managing household information.
+   - Accessible only by Family role.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+7. **Staff Page**:
+   - Staff-specific page for managing staff tasks and details.
+   - Accessible only by Staff role.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## **Key Features**
+- **Role-Based Access Control (RBAC)**:
+  - Secure and tailored access for each role.
+  - Dynamic permission assignments for flexibility.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Add/Edit/Delete Functionalities**:
+  - Each "Manage" page provides complete CRUD (Create, Read, Update, Delete) capabilities.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Custom Components**:
+  - Reusable components (e.g., `Modal`, `Table`, `Input`) enhance modularity and scalability.
 
-### Code Splitting
+- **SCSS for Styling**:
+  - The application uses SCSS for modular and reusable styles across components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Dynamic Filtering**:
+  - Permissions dynamically adapt based on role (e.g., Admin cannot access Family or Staff Profile).
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## **Technology Stack**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### **Frontend**:
+- **React.js**: For building dynamic and responsive user interfaces.
+- **React Router DOM**: For managing navigation and routes.
+- **React Icons**: For visually appealing icons.
+- **SCSS**: For modular and reusable styling.
 
-### Advanced Configuration
+### **Charting**:
+- **Chart.js & react-chartjs-2**: For building interactive charts in the Dashboard.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### **Data Management**:
+- **Local Storage** 
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## **Setup Instructions**
 
-### `npm run build` fails to minify
+### **Prerequisites**
+- Node.js (v14 or higher)
+- npm or yarn installed
+- A database (e.g., MySQL, PostgreSQL, MongoDB)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### **Installation**
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/vrvsecurity.git
+   cd vrvsecurity

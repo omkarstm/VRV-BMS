@@ -1,0 +1,38 @@
+.role-management {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      .add-btn {
+        background-color: #191922;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #272626;
+        }
+      }
+    }
+    .add-role-form{
+      margin-top: 2rem;
+      max-width: 350px;
+      .permissions{
+        margin-bottom: 1.5rem;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        > *{
+          cursor: pointer;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  
