@@ -101,7 +101,6 @@ The system includes **four predefined roles** with distinct permissions:
 ### **Prerequisites**
 - Node.js (v14 or higher)
 - npm or yarn installed
-- A database (e.g., MySQL, PostgreSQL, MongoDB)
 
 ### **Installation**
 1. **Clone the repository**:
