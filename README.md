@@ -11,6 +11,7 @@ This project ensures secure and efficient administration while catering to the u
 
 ### **Roles and Permissions**
 The system includes **four predefined roles** with distinct permissions:
+
 1. **Admin**:
    - **Access**: All pages except **Family Profile** and **Staff Profile**.
    - Responsibilities: Manage users, roles, families, and staff.
@@ -77,6 +78,18 @@ The system includes **four predefined roles** with distinct permissions:
 - **Dynamic Filtering**:
   - Permissions dynamically adapt based on role (e.g., Admin cannot access Family or Staff Profile).
 
+---
+
+## **Default Login Credentials**
+
+To review the system functionality, you can log in using the following predefined users:
+
+| **Role**     | **Email**                    | **Password**    |
+|--------------|------------------------------|-----------------|
+| Admin        | aarav.sharma@example.com     | password123     |
+| Moderator    | ishita.verma@example.com     | password123     |
+| Family       | rajesh.kumar@example.com     | password123     |
+| Staff        | rajesh.staff@example.com     | password123     |
 
 ---
 
@@ -92,7 +105,7 @@ The system includes **four predefined roles** with distinct permissions:
 - **Chart.js & react-chartjs-2**: For building interactive charts in the Dashboard.
 
 ### **Data Management**:
-- **Local Storage** 
+- **Local Storage**: Used to store roles, users, and staff data persistently for review and testing.
 
 ---
 
@@ -105,4 +118,5 @@ The system includes **four predefined roles** with distinct permissions:
 ### **Installation**
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/omkarstm/VRV-BMS
+   git clone https://github.com/omkarstm/VRV-BMS.git
+   cd VRV-BMS
