@@ -1,7 +1,7 @@
 # **Building Management System (BMS)**
 
 ## **Overview**
-The **Building Management System (BMS)** is a comprehensive web application designed to streamline the management of roles, users, families, and staff in a residential or commercial building. The system incorporates **role-based access control (RBAC)** to provide customized access to specific features and pages based on user roles. 
+The **Building Management System (BMS)** is a comprehensive web application designed to streamline the management of roles, users, families, and staff in residential or commercial buildings. The system incorporates **role-based access control (RBAC)** to provide customized access to specific features and pages based on user roles. 
 
 This project ensures secure and efficient administration while catering to the unique requirements of building staff, families, and managers.
 
@@ -66,6 +66,9 @@ The system includes **four predefined roles** with distinct permissions:
   - Secure and tailored access for each role.
   - Dynamic permission assignments for flexibility.
 
+- **Encrypted Default Data**:
+  - Default user and staff data are securely encrypted using AES encryption.
+
 - **Add/Edit/Delete Functionalities**:
   - Each "Manage" page provides complete CRUD (Create, Read, Update, Delete) capabilities.
 
@@ -93,6 +96,17 @@ To review the system functionality, you can log in using the following predefine
 
 ---
 
+## **Data Encryption**
+
+The application securely encrypts default user and staff data using **AES encryption** with the help of `CryptoJS`. All sensitive information, including passwords, is encrypted before being stored in local storage.
+
+### **How Encryption Works**
+1. Default data is encrypted using a secret key before being stored in local storage.
+2. Encrypted passwords are securely stored and cannot be read without the secret key.
+3. When required, the application decrypts the data on the fly to ensure secure access.
+
+---
+
 ## **Technology Stack**
 
 ### **Frontend**:
@@ -106,6 +120,9 @@ To review the system functionality, you can log in using the following predefine
 
 ### **Data Management**:
 - **Local Storage**: Used to store roles, users, and staff data persistently for review and testing.
+
+### **Encryption**:
+- **CryptoJS**: Used for encrypting and decrypting sensitive data like passwords.
 
 ---
 
